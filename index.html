@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nosso Amor</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff6ec7;
+      margin-bottom: 10px;
+    }
+
+    .contador {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #00ffcc;
+    }
+
+    .foto {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      margin: 20px 0;
+    }
+
+    .declaracao {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: justify;
+      white-space: pre-line;
+      line-height: 1.6;
+    }
+
+    audio {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Feliz Aniversário de 4 Anos 💖</h1>
+
+  <div class="contador" id="contador"></div>
+
+  <img src="foto.jpg" alt="Nossa Foto" class="foto">
+
+  <div class="declaracao">
+    Se há 4 anos me perguntassem onde eu estaria hoje, dia 6/5/2025, eu certamente não saberia se estaria na profissão que estou, com as coisas que adquiri e até mesmo fazendo as coisas que faço, mas eu teria certeza de uma coisa: estaria comemorando os nossos 4 anos juntos.
+    
+    Durante os últimos 1500 dias a vida tem sido mais feliz, com mais motivos para lutar pelos objetivos e com mais vida.
+    
+    Desde o primeiro segundo de lucidez do dia, até quando olhos olhos imploram por descanso.. eu penso em você.. e vivo você!
+
+    Você me ensinou a ser mais carinhoso, mais amigo, a tentar externalizar meus pensamentos, me ensinou a ouvir e me deixou ser ouvido, me mostrou um turbilhão de sabores novos, cheiros novos, lugares novos e música novas.
+
+    Nossas vidas tem mudado, tem se entrelaçado cada vez mais e as responsabilidades da casa tem dados novos sabores em nosso relacionamento.
+
+    Duranre esse um ano de noivado e todo o nosso relacionamento você se mostrou ser amorosa, amiga e a minha base. Li uma frase no insta que me lembrou você: "A calmaria  exata nos momentos que mais preciso dela."
+
+    Sabe, a vida com você tem sido muito melhor. Não me vejo sem você e só espero uma única coisa: o dia em que a noite de domingo não nos separe.
+
+    A cada frase que você escreve no quadro, a cada abraço que você me dá, sinto-me totalmente completo. 
+    Desde o primeiro dia de conversa, vi-me apaixonado por você. Antes mesmo de te beijar já sabia que iríamos construir uma família.
+
+    Se alguém perguntasse quem somos nós, diria:
+    Somos das flores, das frases nos quadros, da aliança no cordão para diminuir a saudade...dos clichês, dos pulos ao se ver e da vontade de ficar em casa quando marcamos de sair. Os bobos apaixonados que nesse mundo frio não tem vergonha de parecer que namoram há poucas semanas, mas que na verdade, hoje, comemoram 1 ano de noivado.
+
+    Feliz hoje, minha rainha. Não vejo a hora de te ver.
+
+    Te amo,  
+    Hoje mais do que ontem, amanhã mais do que hoje.
+  </div>
+
+  <audio controls autoplay loop>
+    <source src="ciclo.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <script>
+    function atualizarContador() {
+      const inicio = new Date('2021-05-06T00:00:00');
+      const agora = new Date();
+      const diffMs = agora - inicio;
+
+      const dias = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diffMs / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diffMs / (1000 * 60)) % 60);
+      const segundos = Math.floor((diffMs / 1000) % 60);
+
+      document.getElementById('contador').innerText =
+        `Estamos juntos há ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos 💞`;
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+  </script>
+</body>
+</html>
